@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.navbar{
+    width: 80%;
+    position: fixed;
+    top: 20px;
+    right: 10%;
+    transform: translate();
+    /* animation:moving 1s alternate infinite; */
+}
+.nav-container{
+    border: 3px solid white;
+    border-radius:20px;
+    box-shadow:0px 0px 8px 2px white ;
+    background-color: #14052a;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0px 20px;
+    width: 100%;
+    color:white;
+    height: 60px;
+}
+.container a{
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    display: inline;
+}
+.menu-logo{
+    line-height: 52px;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.menubar{
+    position: absolute;
+    display: none;
+    right: 0;
+    top:70px;
+    overflow-y: scroll;
+    padding: 20px;
+    font-size: 20px;
+}
+.menubar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menubar::-webkit-scrollbar{
+    display: none;
+}
+.nav-item{
+    position: relative;
+    display: inline;
+    
+}
+li{
+    list-style-type: none;
+}
+.category{
+    position: absolute;
+    right: 200px;
+    bottom: -195px;
+    display: none;
+    
+}
+.category ul{
+    padding: 8px;
+    display: flex; 
+    gap: 10px;
+}
+.search-panel{
+    display: flex;
+    width: 50%;
+    gap: 2%;
+}
+.search-bar::placeholder{
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+}
+.search-bar , .search{
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    height: 30px;
+    padding: 4px;
+}
+.search-bar{
+    width: 70%;
+}
+.search{
+    width: 25%;
+    cursor: pointer;
+}
+@keyframes moving {
+    0%{
+        transform: translatex(0);
+    }
+    100%{
+        transform: translatex(20px);
+    }    
+}
+.types{
+   border: 2px solid white;
+   margin: 4px;
+   height: fit-content;
+   padding: 2px 8px;
+   text-align: center;
+   border-radius: 10px;
+}
+.types:hover{
+   transform: scale(1.1);
+   z-index: 10;
+   box-shadow: 0 4px 8px rgb(255, 251, 251);
+}
